@@ -1,0 +1,996 @@
+<app-stats-card></app-stats-card>
+
+
+<!--Grid row-->
+<div class="row wow fadeIn mt-5">
+
+    <!--Grid column-->
+    <div class="col-md-9 mb-4">
+
+        <!--Card-->
+        <mdb-card>
+
+            <!--Card content-->
+            <mdb-card-body>
+
+                <div style="display: block">
+                    <canvas mdbChart
+                            [chartType]="structureChartType"
+                            [datasets]="structureChartDatasets"
+                            [labels]="structureChartLabels"
+                            [colors]="structureChartColors"
+                            [options]="structureChartOptions"
+                            [legend]="true"
+                    >
+                    </canvas>
+                </div>
+            </mdb-card-body>
+
+        </mdb-card>
+        <!--/.Card-->
+
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-3 mb-4">
+
+        <!--Card-->
+        <!--        <mdb-card class="mb-4">-->
+
+        <!--            &lt;!&ndash; Card header &ndash;&gt;-->
+        <!--            <div class="card-header text-center">-->
+        <!--                Pie chart-->
+        <!--            </div>-->
+
+        <!--            &lt;!&ndash;Card content&ndash;&gt;-->
+        <!--            <mdb-card-body>-->
+
+        <!--                <div style="display: block">-->
+        <!--                    <canvas mdbChart [chartType]="chart2Type" [datasets]="chartDatasets" [labels]="chartLabels"-->
+        <!--                            [colors]="chartColors" [options]="chartOptions"-->
+        <!--                            [legend]="true">-->
+        <!--                    </canvas>-->
+        <!--                </div>-->
+        <!--            </mdb-card-body>-->
+
+        <!--        </mdb-card>-->
+        <!--        &lt;!&ndash;/.Card&ndash;&gt;-->
+
+        <!--Card-->
+        <mdb-card class="mb-4">
+
+            <!--Card content-->
+            <mdb-card-body>
+
+                <h4>Розрахунки</h4>
+                <!-- List group links -->
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action waves-effect">Рекомендовано
+                        <mdb-badge success="true" pill="true" class="pull-right">22%
+                            <mdb-icon fas icon="arrow-up" class="ml-1"></mdb-icon>
+                        </mdb-badge>
+                    </a>
+                    <a class="list-group-item list-group-item-action waves-effect">До сплати
+                        <mdb-badge danger="true" pill="true" class="pull-right">5%
+                            <mdb-icon fas icon="arrow-down" class="ml-1"></mdb-icon>
+                        </mdb-badge>
+                    </a>
+                    <a class="list-group-item list-group-item-action waves-effect">Всього сплачено
+                        <mdb-badge primary="true" pill="true" class="pull-right">14</mdb-badge>
+                    </a>
+                    <a class="list-group-item list-group-item-action waves-effect">Спожито
+                        <span class="badge badge-primary badge-pill pull-right">123</span>
+                    </a>
+                    <a class="list-group-item list-group-item-action waves-effect">Всього спожито
+                        <mdb-badge primary="true" pill="true" class="pull-right">8</mdb-badge>
+                    </a>
+                </div>
+                <!-- List group links -->
+
+            </mdb-card-body>
+
+        </mdb-card>
+        <!--/.Card-->
+
+    </div>
+    <!--Grid column-->
+
+</div>
+<!--Grid row-->
+
+<!--Grid row-->
+<div class="row wow fadeIn">
+
+    <!--Grid column-->
+    <div class="col-md-6 mb-4">
+
+        <!--Card-->
+        <mdb-card>
+
+            <!-- Card header -->
+            <div class="card-header">Екран споживання</div>
+
+            <!--Card content-->
+            <mdb-card-body>
+
+                <div style="display: block">
+                    <canvas mdbChart
+                            [chartType]="monitorChartType"
+                            [datasets]="monitorChartDatasets"
+                            [labels]="monitorChartLabels"
+                            [colors]="monitorChartColors"
+                            [options]="monitorChartOptions"
+                            [legend]="true"
+                    >
+                    </canvas>
+                </div>
+            </mdb-card-body>
+
+        </mdb-card>
+        <!--/.Card-->
+
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-6 mb-4">
+
+        <!--Card-->
+        <mdb-card>
+
+            <!--Card content-->
+            <mdb-card-body>
+
+                <!-- Table  -->
+                <table class="table table-hover">
+                    <!-- Table head -->
+                    <thead class="blue lighten-4">
+                    <tr>
+                        <th>#</th>
+                        <th>Дата</th>
+                        <th>Показники, M<sup>3</sup></th>
+                        <th>Сплачено, грн</th>
+                    </tr>
+                    </thead>
+                    <!-- Table head -->
+
+                    <!-- Table body -->
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>01.01.2020</td>
+                        <td>10</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>01.02.2020</td>
+                        <td>12</td>
+                        <td>160</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>01.03.2020</td>
+                        <td>13</td>
+                        <td>170</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>01.03.2020</td>
+                        <td>13</td>
+                        <td>170</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>01.03.2020</td>
+                        <td>13</td>
+                        <td>170</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>01.03.2020</td>
+                        <td>13</td>
+                        <td>170</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>01.03.2020</td>
+                        <td>13</td>
+                        <td>170</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>01.03.2020</td>
+                        <td>13</td>
+                        <td>170</td>
+                    </tr>
+                    </tbody>
+                    <!-- Table body -->
+                </table>
+                <!-- Table  -->
+
+            </mdb-card-body>
+
+        </mdb-card>
+        <!--/.Card-->
+
+    </div>
+    <!--Grid column-->
+
+</div>
+<!--Grid row-->
+
+<!--Grid row-->
+<div class="row wow fadeIn">
+
+    <!--Grid column-->
+    <!--    <div class="col-lg-4 col-md-12 mb-4">-->
+<!--    <div class="col-md-6 mb-4">-->
+
+<!--        &lt;!&ndash;Card&ndash;&gt;-->
+<!--        <mdb-card>-->
+
+<!--            &lt;!&ndash; Card header &ndash;&gt;-->
+<!--            <div class="card-header">Екран споживання</div>-->
+
+<!--            &lt;!&ndash;Card content&ndash;&gt;-->
+<!--            <mdb-card-body>-->
+
+<!--                <div style="display: block">-->
+<!--                    <canvas mdbChart-->
+<!--                            [chartType]="monitorChartType"-->
+<!--                            [datasets]="monitorChartDatasets"-->
+<!--                            [labels]="monitorChartLabels"-->
+<!--                            [colors]="monitorChartColors"-->
+<!--                            [options]="monitorChartOptions"-->
+<!--                            [legend]="true"-->
+<!--                    >-->
+<!--                    </canvas>-->
+<!--                </div>-->
+<!--            </mdb-card-body>-->
+
+<!--        </mdb-card>-->
+<!--        &lt;!&ndash;/.Card&ndash;&gt;-->
+
+<!--    </div>-->
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <!--    <div class="col-lg-4 col-md-6 mb-4">-->
+
+    <!--        &lt;!&ndash;Card&ndash;&gt;-->
+    <!--        <mdb-card>-->
+
+    <!--            &lt;!&ndash; Card header &ndash;&gt;-->
+    <!--            <div class="card-header">Radar Chart</div>-->
+
+    <!--            &lt;!&ndash;Card content&ndash;&gt;-->
+    <!--            <mdb-card-body>-->
+
+    <!--                <div style="display: block">-->
+    <!--                    <canvas mdbChart [chartType]="chart4Type" [datasets]="chartDatasets" [labels]="chartLabels"-->
+    <!--                            [colors]="chartColors" [options]="chartOptions"-->
+    <!--                            [legend]="true">-->
+    <!--                    </canvas>-->
+    <!--                </div>-->
+    <!--            </mdb-card-body>-->
+
+    <!--        </mdb-card>-->
+    <!--        &lt;!&ndash;/.Card&ndash;&gt;-->
+
+    <!--    </div>-->
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <!--    <div class="col-lg-4 col-md-6 mb-4">-->
+
+    <!--        &lt;!&ndash;Card&ndash;&gt;-->
+    <!--        <mdb-card>-->
+
+    <!--            &lt;!&ndash; Card header &ndash;&gt;-->
+    <!--            <div class="card-header">Doughnut Chart</div>-->
+
+    <!--            &lt;!&ndash;Card content&ndash;&gt;-->
+    <!--            <mdb-card-body>-->
+
+    <!--                <div style="display: block">-->
+    <!--                    <canvas mdbChart [chartType]="chart5Type" [datasets]="chartDatasets" [labels]="chartLabels"-->
+    <!--                            [colors]="chartColors" [options]="chartOptions"-->
+    <!--                            [legend]="true">-->
+    <!--                    </canvas>-->
+    <!--                </div>-->
+    <!--            </mdb-card-body>-->
+
+    <!--        </mdb-card>-->
+    <!--        &lt;!&ndash;/.Card&ndash;&gt;-->
+
+    <!--    </div>-->
+    <!--Grid column-->
+
+</div>
+<!--Grid row-->
+
+<!--Grid row-->
+<!--<div class="row wow fadeIn">-->
+
+<!--    &lt;!&ndash;Grid column&ndash;&gt;-->
+<!--    <div class="col-md-6 mb-4">-->
+
+<!--        &lt;!&ndash;Card&ndash;&gt;-->
+<!--        <mdb-card>-->
+
+<!--            &lt;!&ndash; Card header &ndash;&gt;-->
+<!--            <div class="card-header">Google map</div>-->
+
+<!--            &lt;!&ndash;Card content&ndash;&gt;-->
+<!--            <mdb-card-body>-->
+
+<!--                &lt;!&ndash;Google map&ndash;&gt;-->
+<!--                <div class="card-body text-center">-->
+<!--                    <agm-map [latitude]="map.lat" [longitude]="map.lng" [mapTypeId]="'roadmap'" style="height: 300px">-->
+<!--                        <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>-->
+<!--                    </agm-map>-->
+
+<!--                </div>-->
+<!--            </mdb-card-body>-->
+
+<!--        </mdb-card>-->
+<!--        &lt;!&ndash;/.Card&ndash;&gt;-->
+
+<!--    </div>-->
+<!--    &lt;!&ndash;Grid column&ndash;&gt;-->
+
+<!--    &lt;!&ndash;Grid column&ndash;&gt;-->
+<!--    <div class="col-md-6 mb-4">-->
+
+<!--        &lt;!&ndash;Card&ndash;&gt;-->
+<!--        <mdb-card>-->
+
+
+<!--            <div class="card-header">Modals</div>-->
+<!--            &lt;!&ndash;Card content&ndash;&gt;-->
+<!--            <mdb-card-body>-->
+<!--                &lt;!&ndash;Section: Position & Sizes&ndash;&gt;-->
+<!--                <section class="px-4">-->
+<!--                    <h4 class="mb-5 mt-4 dark-grey-text text-center font-bold">-->
+<!--                        <strong>Position & Sizes</strong>-->
+<!--                    </h4>-->
+
+<!--                    <div class="text-center mb-5">-->
+<!--                        <p class="lead">Click buttons below to launch modals demo</p>-->
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash; First row&ndash;&gt;-->
+<!--                    <div class="row">-->
+
+<!--                        &lt;!&ndash;First column&ndash;&gt;-->
+<!--                        <div class="col-md-3">-->
+<!--                            <h5 class="text-center mb-3">Frame Modal</h5>-->
+
+<!--                            <img src="https://mdbootstrap.com/img/brandflow/modal4.jpg" alt=""-->
+<!--                                 class="img-fluid z-depth-1">-->
+<!--                            <div class="text-center">-->
+<!--                                <h5 class="my-3">Position</h5>-->
+
+
+<!--                                <button type="button" mdbBtn color="primary" class="waves-light" data-toggle="modal"-->
+<!--                                        data-target="#basicExample" (click)="frameTop.show()"-->
+<!--                                        mdbWavesEffect>-->
+<!--                                    Top-->
+<!--                                </button>-->
+<!--                                <br>-->
+<!--                                <button type="button" mdbBtn color="primary" class="waves-light" data-toggle="modal"-->
+<!--                                        data-target="#basicExample" (click)="frameBottom.show()"-->
+<!--                                        mdbWavesEffect>-->
+<!--                                    Bottom-->
+<!--                                </button>-->
+
+<!--                                <div mdbModal #frameTop="mdb-modal" class="modal fade top" id="frameModalBottom"-->
+<!--                                     tabindex="-1" role="dialog" aria-labelledby="myModalLabel"-->
+<!--                                     aria-hidden="true" [config]="{backdrop: false, ignoreBackdropClick: false}">-->
+<!--                                    <div class="modal-dialog modal-frame modal-top" role="document">-->
+<!--                                        <div class="modal-content">-->
+<!--                                            <div class="modal-body text-center">-->
+<!--                                                <div class="row px-4">-->
+<!--                                                    <p class="pt-1 pr-2">Lorem ipsum dolor sit amet, consectetur-->
+<!--                                                        adipisicing elit. Impedit nisi quo provident fugiat-->
+<!--                                                        reprehenderit-->
+<!--                                                        nostrum quos..</p>-->
+<!--                                                    <button type="button" mdbBtn color="secondary" class="waves-light"-->
+<!--                                                            data-dismiss="modal" (click)="frameTop.hide()"-->
+<!--                                                            mdbWavesEffect>Close-->
+<!--                                                    </button>-->
+<!--                                                    <button type="button" mdbBtn color="primary" class="waves-light"-->
+<!--                                                            mdbWavesEffect>Save changes-->
+<!--                                                    </button>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div mdbModal #frameBottom="mdb-modal" class="modal fade bottom" id="frameModalBottom"-->
+<!--                                     tabindex="-1" role="dialog" aria-labelledby="myModalLabel"-->
+<!--                                     aria-hidden="true" [config]="{backdrop: false, ignoreBackdropClick: false}">-->
+<!--                                    <div class="modal-dialog modal-frame modal-bottom" role="document">-->
+<!--                                        <div class="modal-content">-->
+<!--                                            <div class="modal-body text-center">-->
+<!--                                                <div class="row px-4">-->
+<!--                                                    <p class="pt-1 pr-2">Lorem ipsum dolor sit amet, consectetur-->
+<!--                                                        adipisicing elit. Impedit nisi quo provident fugiat-->
+<!--                                                        reprehenderit-->
+<!--                                                        nostrum quos..</p>-->
+<!--                                                    <button type="button" mdbBtn color="secondary" class="waves-light"-->
+<!--                                                            data-dismiss="modal" (click)="frameBottom.hide()"-->
+<!--                                                            mdbWavesEffect>Close-->
+<!--                                                    </button>-->
+<!--                                                    <button type="button" mdbBtn color="primary" class="waves-light"-->
+<!--                                                            mdbWavesEffect>Save changes-->
+<!--                                                    </button>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash;First column&ndash;&gt;-->
+
+<!--                        &lt;!&ndash;Second column&ndash;&gt;-->
+<!--                        <div class="col-md-3">-->
+<!--                            <h5 class="text-center mb-3">Side Modal</h5>-->
+
+<!--                            <img src="https://mdbootstrap.com/img/brandflow/modal3.jpg" alt=""-->
+<!--                                 class="img-fluid z-depth-1">-->
+<!--                            <div class="text-center">-->
+<!--                                <h5 class="my-3">Position</h5>-->
+
+<!--                                <button type="button" mdbBtn color="primary" class="waves-light" data-toggle="modal"-->
+<!--                                        data-target="#basicExample" (click)="sideTopRight.show()"-->
+<!--                                        mdbWavesEffect>-->
+<!--                                    Top right-->
+<!--                                </button>-->
+<!--                                <br>-->
+<!--                                <button type="button" mdbBtn color="primary" class="waves-light" data-toggle="modal"-->
+<!--                                        data-target="#basicExample" (click)="sideTopLeft.show()"-->
+<!--                                        mdbWavesEffect>-->
+<!--                                    Top left-->
+<!--                                </button>-->
+<!--                                <br>-->
+<!--                                <button type="button" mdbBtn color="primary" class="waves-light" data-toggle="modal"-->
+<!--                                        data-target="#basicExample" (click)="sideBottomRight.show()"-->
+<!--                                        mdbWavesEffect>-->
+<!--                                    Bottom right-->
+<!--                                </button>-->
+<!--                                <br>-->
+<!--                                <button type="button" mdbBtn color="primary" class="waves-light" data-toggle="modal"-->
+<!--                                        data-target="#basicExample" (click)="sideBottomLeft.show()"-->
+<!--                                        mdbWavesEffect>-->
+<!--                                    Bottom left-->
+<!--                                </button>-->
+<!--                                <br>-->
+
+
+<!--                                <div mdbModal #sideTopRight="mdb-modal" class="modal fade right" id="centralModalSm"-->
+<!--                                     tabindex="-1" role="dialog" aria-labelledby="myModalLabel"-->
+<!--                                     aria-hidden="true">-->
+<!--                                    <div class="modal-dialog modal-side modal-top-right" role="document">-->
+<!--                                        <div class="modal-content">-->
+<!--                                            <div class="modal-header">-->
+<!--                                                <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>-->
+<!--                                                <button type="button" class="close" data-dismiss="modal"-->
+<!--                                                        aria-label="Close" (click)="sideTopRight.hide()">-->
+<!--                                                    <span aria-hidden="true">×</span>-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-body">-->
+<!--                                                ...-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-footer">-->
+<!--                                                <button type="button" mdbBtn color="secondary" class="waves-light"-->
+<!--                                                        data-dismiss="modal" (click)="sideTopRight.hide()"-->
+<!--                                                        mdbWavesEffect>Close-->
+<!--                                                </button>-->
+<!--                                                <button type="button" mdbBtn color="primary" class="waves-light"-->
+<!--                                                        mdbWavesEffect>Save changes-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div mdbModal #sideTopLeft="mdb-modal" class="modal fade left" id="centralModalSm"-->
+<!--                                     tabindex="-1" role="dialog" aria-labelledby="myModalLabel"-->
+<!--                                     aria-hidden="true">-->
+<!--                                    <div class="modal-dialog modal-side modal-top-left" role="document">-->
+<!--                                        <div class="modal-content">-->
+<!--                                            <div class="modal-header">-->
+<!--                                                <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>-->
+<!--                                                <button type="button" class="close" data-dismiss="modal"-->
+<!--                                                        aria-label="Close" (click)="sideTopLeft.hide()">-->
+<!--                                                    <span aria-hidden="true">×</span>-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-body">-->
+<!--                                                ...-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-footer">-->
+<!--                                                <button type="button" mdbBtn color="secondary" class="waves-light"-->
+<!--                                                        data-dismiss="modal" (click)="sideTopLeft.hide()"-->
+<!--                                                        mdbWavesEffect>Close-->
+<!--                                                </button>-->
+<!--                                                <button type="button" mdbBtn color="primary" class="waves-light"-->
+<!--                                                        mdbWavesEffect>Save changes-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div mdbModal #sideBottomRight="mdb-modal" class="modal fade right" id="centralModalSm"-->
+<!--                                     tabindex="-1" role="dialog" aria-labelledby="myModalLabel"-->
+<!--                                     aria-hidden="true">-->
+<!--                                    <div class="modal-dialog modal-side modal-bottom-right" role="document">-->
+<!--                                        <div class="modal-content">-->
+<!--                                            <div class="modal-header">-->
+<!--                                                <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>-->
+<!--                                                <button type="button" class="close" data-dismiss="modal"-->
+<!--                                                        aria-label="Close" (click)="sideBottomRight.hide()">-->
+<!--                                                    <span aria-hidden="true">×</span>-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-body">-->
+<!--                                                ...-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-footer">-->
+<!--                                                <button type="button" mdbBtn color="secondary" class="waves-light"-->
+<!--                                                        data-dismiss="modal" (click)="sideBottomRight.hide()"-->
+<!--                                                        mdbWavesEffect>Close-->
+<!--                                                </button>-->
+<!--                                                <button type="button" mdbBtn color="primary" class="waves-light"-->
+<!--                                                        mdbWavesEffect>Save changes-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+
+<!--                                <div mdbModal #sideBottomLeft="mdb-modal" class="modal fade left" id="centralModalSm"-->
+<!--                                     tabindex="-1" role="dialog" aria-labelledby="myModalLabel"-->
+<!--                                     aria-hidden="true">-->
+<!--                                    <div class="modal-dialog modal-side modal-bottom-left" role="document">-->
+<!--                                        <div class="modal-content">-->
+<!--                                            <div class="modal-header">-->
+<!--                                                <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>-->
+<!--                                                <button type="button" class="close" data-dismiss="modal"-->
+<!--                                                        aria-label="Close" (click)="sideBottomLeft.hide()">-->
+<!--                                                    <span aria-hidden="true">×</span>-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-body">-->
+<!--                                                ...-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-footer">-->
+<!--                                                <button type="button" mdbBtn color="secondary" class="waves-light"-->
+<!--                                                        data-dismiss="modal" (click)="sideBottomLeft.hide()"-->
+<!--                                                        mdbWavesEffect>Close-->
+<!--                                                </button>-->
+<!--                                                <button type="button" mdbBtn color="primary" class="waves-light"-->
+<!--                                                        mdbWavesEffect>Save changes-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash;Second column&ndash;&gt;-->
+
+<!--                        &lt;!&ndash;Third column&ndash;&gt;-->
+<!--                        <div class="col-md-3">-->
+<!--                            <h5 class="text-center mb-3">Central Modal</h5>-->
+
+<!--                            <img src="https://mdbootstrap.com/img/brandflow/modal2.jpg" alt=""-->
+<!--                                 class="img-fluid z-depth-1">-->
+<!--                            <div class="text-center">-->
+<!--                                <h5 class="my-3">Size</h5>-->
+
+<!--                                <button type="button" mdbBtn color="primary" class="waves-light" data-toggle="modal"-->
+<!--                                        data-target="#basicExample" (click)="modalLoginAvatarDemo.show()"-->
+<!--                                        mdbWavesEffect>-->
+<!--                                    Small-->
+<!--                                </button>-->
+<!--                                <br>-->
+<!--                                <button type="button" mdbBtn color="primary" class="waves-light" data-toggle="modal"-->
+<!--                                        data-target="#basicExample" (click)="centralRegular.show()"-->
+<!--                                        mdbWavesEffect>-->
+<!--                                    Medium-->
+<!--                                </button>-->
+<!--                                <br>-->
+<!--                                <button type="button" mdbBtn color="primary" class="waves-light" data-toggle="modal"-->
+<!--                                        data-target="#basicExample" (click)="centralLarge.show()"-->
+<!--                                        mdbWavesEffect>-->
+<!--                                    Large-->
+<!--                                </button>-->
+<!--                                <br>-->
+<!--                                <button type="button" mdbBtn color="primary" class="waves-light" data-toggle="modal"-->
+<!--                                        data-target="#basicExample" (click)="centralFluid.show()"-->
+<!--                                        mdbWavesEffect>-->
+<!--                                    Fluid-->
+<!--                                </button>-->
+<!--                                <br>-->
+
+<!--                                &lt;!&ndash;Modal Form Login with Avatar Demo&ndash;&gt;-->
+<!--                                <div mdbModal #modalLoginAvatarDemo="mdb-modal" class="modal fade"-->
+<!--                                     id="modalLoginAvatarDemo" tabindex="-1" role="dialog"-->
+<!--                                     aria-labelledby="myModalLabel" aria-hidden="true">-->
+<!--                                    <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">-->
+<!--                                        &lt;!&ndash;Content&ndash;&gt;-->
+<!--                                        <div class="modal-content">-->
+
+<!--                                            &lt;!&ndash;Header&ndash;&gt;-->
+<!--                                            <div class="modal-header">-->
+<!--                                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%281%29.jpg"-->
+<!--                                                     class="rounded-circle img-responsive">-->
+<!--                                            </div>-->
+<!--                                            &lt;!&ndash;Body&ndash;&gt;-->
+<!--                                            <div class="modal-body text-center mb-1">-->
+
+<!--                                                <h5 class="mt-1 mb-2">Maria Doe</h5>-->
+
+<!--                                                <div class="md-form ml-0 mr-0">-->
+<!--                                                    <input type="password" type="text" id="form1"-->
+<!--                                                           class="form-control ml-0" mdbInput>-->
+<!--                                                    <label for="form1" class="ml-0">Enter password</label>-->
+<!--                                                </div>-->
+
+<!--                                                <div class="text-center">-->
+<!--                                                    <button mdbBtn color="cyan" class="mt-1">Login-->
+<!--                                                        <mdb-icon fas icon="sign-in-alt" class="ml-1"></mdb-icon>-->
+<!--                                                    </button>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+
+<!--                                        </div>-->
+<!--                                        &lt;!&ndash;/.Content&ndash;&gt;-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                &lt;!&ndash;Modal Form Login with Avatar Demo&ndash;&gt;-->
+
+<!--                                <div mdbModal #centralRegular="mdb-modal" class="modal fade" id="basicExample"-->
+<!--                                     tabindex="-1" role="dialog" aria-labelledby="myModalLabel"-->
+<!--                                     aria-hidden="true" [config]="{backdrop: true, ignoreBackdropClick: false}">-->
+<!--                                    <div class="modal-dialog " role="document">-->
+<!--                                        <div class="modal-content">-->
+<!--                                            <div class="modal-header">-->
+<!--                                                <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>-->
+<!--                                                <button type="button" class="close" data-dismiss="modal"-->
+<!--                                                        aria-label="Close" (click)="centralRegular.hide()">-->
+<!--                                                    <span aria-hidden="true">×</span>-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-body">-->
+<!--                                                ...-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-footer">-->
+<!--                                                <button type="button" mdbBtn color="secondary" size="sm"-->
+<!--                                                        class="waves-light" data-dismiss="modal"-->
+<!--                                                        (click)="centralRegular.hide()" mdbWavesEffect>Close-->
+<!--                                                </button>-->
+<!--                                                <button type="button" mdbBtn color="primary" size="sm"-->
+<!--                                                        class="waves-light" mdbWavesEffect>Save changes-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div mdbModal #centralLarge="mdb-modal" class="modal fade" id="basicExample"-->
+<!--                                     tabindex="-1" role="dialog" aria-labelledby="myModalLabel"-->
+<!--                                     aria-hidden="true" [config]="{backdrop: true, ignoreBackdropClick: false}">-->
+<!--                                    <div class="modal-dialog modal-lg" role="document">-->
+<!--                                        <div class="modal-content">-->
+<!--                                            <div class="modal-header">-->
+<!--                                                <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>-->
+<!--                                                <button type="button" class="close" data-dismiss="modal"-->
+<!--                                                        aria-label="Close" (click)="centralLarge.hide()">-->
+<!--                                                    <span aria-hidden="true">×</span>-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-body">-->
+<!--                                                ...-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-footer">-->
+<!--                                                <button type="button" mdbBtn color="secondary" size="sm"-->
+<!--                                                        class="waves-light" data-dismiss="modal"-->
+<!--                                                        (click)="centralLarge.hide()" mdbWavesEffect>Close-->
+<!--                                                </button>-->
+<!--                                                <button type="button" mdbBtn color="primary" size="sm"-->
+<!--                                                        class="waves-light" mdbWavesEffect>Save changes-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div mdbModal #centralFluid="mdb-modal" class="modal fade" id="basicExample"-->
+<!--                                     tabindex="-1" role="dialog" aria-labelledby="myModalLabel"-->
+<!--                                     aria-hidden="true" [config]="{backdrop: true, ignoreBackdropClick: false}">-->
+<!--                                    <div class="modal-dialog modal-fluid" role="document">-->
+<!--                                        <div class="modal-content">-->
+<!--                                            <div class="modal-header">-->
+<!--                                                <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>-->
+<!--                                                <button type="button" class="close" data-dismiss="modal"-->
+<!--                                                        aria-label="Close" (click)="centralFluid.hide()">-->
+<!--                                                    <span aria-hidden="true">×</span>-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-body">-->
+<!--                                                ...-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-footer">-->
+<!--                                                <button type="button" mdbBtn color="primary" size="sm"-->
+<!--                                                        class="waves-light" data-dismiss="modal"-->
+<!--                                                        (click)="centralFluid.hide()" mdbWavesEffect>Close-->
+<!--                                                </button>-->
+<!--                                                <button type="button" mdbBtn color="primary" size="sm"-->
+<!--                                                        class="waves-light" mdbWavesEffect>Save changes-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+
+
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash;Third column&ndash;&gt;-->
+
+<!--                        &lt;!&ndash;Fourth column&ndash;&gt;-->
+<!--                        <div class="col-md-3">-->
+<!--                            <h5 class="text-center mb-3">Fluid Modal</h5>-->
+
+<!--                            <img src="https://mdbootstrap.com/img/brandflow/modal1.jpg" alt=""-->
+<!--                                 class="img-fluid z-depth-1">-->
+<!--                            <div class="text-center">-->
+<!--                                <h5 class="my-3">Position</h5>-->
+
+
+<!--                                <button type="button" mdbBtn color="primary" class="waves-light" data-toggle="modal"-->
+<!--                                        data-target="#basicExample" (click)="fluidRight.show()"-->
+<!--                                        mdbWavesEffect>-->
+<!--                                    Right-->
+<!--                                </button>-->
+<!--                                <br>-->
+<!--                                <button type="button" mdbBtn color="primary" class="waves-light" data-toggle="modal"-->
+<!--                                        data-target="#basicExample" (click)="fluidLeft.show()"-->
+<!--                                        mdbWavesEffect>-->
+<!--                                    Left-->
+<!--                                </button>-->
+<!--                                <br>-->
+<!--                                <button type="button" mdbBtn color="primary" class="waves-light" data-toggle="modal"-->
+<!--                                        data-target="#basicExample" (click)="centralSuccess.show()"-->
+<!--                                        mdbWavesEffect>-->
+<!--                                    Top-->
+<!--                                </button>-->
+<!--                                <br>-->
+<!--                                <button type="button" mdbBtn color="primary" class="waves-light" data-toggle="modal"-->
+<!--                                        data-target="#basicExample" (click)="fluidBottom.show()"-->
+<!--                                        mdbWavesEffect>-->
+<!--                                    Bottom-->
+<!--                                </button>-->
+<!--                                <br>-->
+
+
+<!--                                <div mdbModal #centralSuccess="mdb-modal" class="modal fade" id="centralModalSuccess"-->
+<!--                                     tabindex="-1" role="dialog" aria-labelledby="myModalLabel"-->
+<!--                                     aria-hidden="true">-->
+<!--                                    <div class="modal-dialog modal-notify modal-success" role="document">-->
+<!--                                        <div class="modal-content">-->
+<!--                                            <div class="modal-header">-->
+<!--                                                <p class="heading lead">Modal Success</p>-->
+<!--                                                <button type="button" class="close" data-dismiss="modal"-->
+<!--                                                        aria-label="Close" (click)="centralSuccess.hide()">-->
+<!--                                                    <span aria-hidden="true" class="white-text">×</span>-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-body">-->
+<!--                                                <div class="text-center">-->
+<!--                                                    <mdb-icon fas icon="check" size="4x"-->
+<!--                                                              class="mb-3 animated rotateIn"></mdb-icon>-->
+<!--                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit-->
+<!--                                                        iusto nulla aperiam blanditiis-->
+<!--                                                        ad consequatur in dolores culpa, dignissimos, eius non possimus-->
+<!--                                                        fugiat. Esse ratione fuga, enim,-->
+<!--                                                        ab officiis totam.</p>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-footer justify-content-center">-->
+<!--                                                <a type="button" mdbBtn color="primary" class="waves-light"-->
+<!--                                                   mdbWavesEffect>Get it now-->
+<!--                                                    <mdb-icon far icon="gem" class=" ml-1"></mdb-icon>-->
+<!--                                                </a>-->
+<!--                                                <a type="button" mdbBtn color="secondary" outline="true"-->
+<!--                                                   data-dismiss="modal" (click)="centralSuccess.hide()" mdbWavesEffect>No,-->
+<!--                                                    thanks</a>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+
+
+<!--                                <div mdbModal #fluidBottom="mdb-modal" class="modal fade bottom"-->
+<!--                                     id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"-->
+<!--                                     aria-hidden="true">-->
+<!--                                    <div class="modal-dialog modal-notify modal-success" role="document">-->
+<!--                                        <div class="modal-content">-->
+<!--                                            <div class="modal-header">-->
+<!--                                                <p class="heading lead">Modal Success</p>-->
+<!--                                                <button type="button" class="close" data-dismiss="modal"-->
+<!--                                                        aria-label="Close" (click)="centralSuccess.hide()">-->
+<!--                                                    <span aria-hidden="true" class="white-text">×</span>-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-body">-->
+<!--                                                <div class="text-center">-->
+<!--                                                    <mdb-icon fas icon="check" size="4x"-->
+<!--                                                              class="mb-3 animated rotateIn"></mdb-icon>-->
+<!--                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit-->
+<!--                                                        iusto nulla aperiam blanditiis-->
+<!--                                                        ad consequatur in dolores culpa, dignissimos, eius non possimus-->
+<!--                                                        fugiat. Esse ratione fuga, enim,-->
+<!--                                                        ab officiis totam.</p>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-footer justify-content-center">-->
+<!--                                                <a type="button" mdbBtn color="primary" class="waves-light"-->
+<!--                                                   mdbWavesEffect>Get it now-->
+<!--                                                    <mdb-icon far icon="gem" class=" ml-1"></mdb-icon>-->
+<!--                                                </a>-->
+<!--                                                <a type="button" mdbBtn color="secondary" outline="true"-->
+<!--                                                   data-dismiss="modal" (click)="fluidBottom.hide()" mdbWavesEffect>No,-->
+<!--                                                    thanks</a>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+
+<!--                                <div mdbModal #fluidRight="mdb-modal" class="modal fade right" id="fullHeightModalRight"-->
+<!--                                     tabindex="-1" role="dialog" aria-labelledby="myModalLabel"-->
+<!--                                     aria-hidden="true">-->
+<!--                                    <div class="modal-dialog modal-full-height modal-right" role="document">-->
+<!--                                        <div class="modal-content">-->
+<!--                                            <div class="modal-header">-->
+<!--                                                <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>-->
+<!--                                                <button type="button" class="close" data-dismiss="modal"-->
+<!--                                                        aria-label="Close" (click)="fluidRight.hide()">-->
+<!--                                                    <span aria-hidden="true">×</span>-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-body">-->
+<!--                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente-->
+<!--                                                    magnam, sunt, ea dolore eum quod.-->
+<!--                                                    Minima fugiat enim aut soluta est reprehenderit reiciendis quos,-->
+<!--                                                    qui, amet possimus laborum assumenda-->
+<!--                                                    voluptate.-->
+<!--                                                </p>-->
+
+<!--                                                <ul class="list-group z-depth-0">-->
+<!--                                                    <li class="list-group-item justify-content-between">-->
+<!--                                                        Cras justo odio-->
+<!--                                                        <mdb-badge primary="true" pill="true">14</mdb-badge>-->
+<!--                                                    </li>-->
+<!--                                                    <li class="list-group-item justify-content-between">-->
+<!--                                                        Dapibus ac facilisis in-->
+<!--                                                        <mdb-badge primary="true" pill="true">2</mdb-badge>-->
+<!--                                                    </li>-->
+<!--                                                    <li class="list-group-item justify-content-between">-->
+<!--                                                        Morbi leo risus-->
+<!--                                                        <mdb-badge primary="true" pill="true">1</mdb-badge>-->
+<!--                                                    </li>-->
+<!--                                                    <li class="list-group-item justify-content-between">-->
+<!--                                                        Cras justo odio-->
+<!--                                                        <mdb-badge primary="true" pill="true">14</mdb-badge>-->
+<!--                                                    </li>-->
+<!--                                                    <li class="list-group-item justify-content-between">-->
+<!--                                                        Dapibus ac facilisis in-->
+<!--                                                        <mdb-badge primary="true" pill="true">2</mdb-badge>-->
+<!--                                                    </li>-->
+<!--                                                    <li class="list-group-item justify-content-between">-->
+<!--                                                        Morbi leo risus-->
+<!--                                                        <mdb-badge primary="true" pill="true">1</mdb-badge>-->
+<!--                                                    </li>-->
+<!--                                                </ul>-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-footer justify-content-center">-->
+<!--                                                <button type="button" mdbBtn color="secondary" class="waves-light"-->
+<!--                                                        data-dismiss="modal" (click)="fluidRight.hide()" mdbWavesEffect>-->
+<!--                                                    Close-->
+<!--                                                </button>-->
+<!--                                                <button type="button" mdbBtn color="primary" class="waves-light"-->
+<!--                                                        mdbWavesEffect>Save changes-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div mdbModal #fluidLeft="mdb-modal" class="modal fade left" id="fullHeightModalRight"-->
+<!--                                     tabindex="-1" role="dialog" aria-labelledby="myModalLabel"-->
+<!--                                     aria-hidden="true">-->
+<!--                                    <div class="modal-dialog modal-full-height modal-left" role="document">-->
+<!--                                        <div class="modal-content">-->
+<!--                                            <div class="modal-header">-->
+<!--                                                <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>-->
+<!--                                                <button type="button" class="close" data-dismiss="modal"-->
+<!--                                                        aria-label="Close" (click)="fluidLeft.hide()">-->
+<!--                                                    <span aria-hidden="true">×</span>-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-body">-->
+<!--                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente-->
+<!--                                                    magnam, sunt, ea dolore eum quod.-->
+<!--                                                    Minima fugiat enim aut soluta est reprehenderit reiciendis quos,-->
+<!--                                                    qui, amet possimus laborum assumenda-->
+<!--                                                    voluptate.-->
+<!--                                                </p>-->
+
+<!--                                                <ul class="list-group z-depth-0">-->
+<!--                                                    <li class="list-group-item justify-content-between">-->
+<!--                                                        Cras justo odio-->
+<!--                                                        <mdb-badge primary="true" pill="true">14</mdb-badge>-->
+<!--                                                    </li>-->
+<!--                                                    <li class="list-group-item justify-content-between">-->
+<!--                                                        Dapibus ac facilisis in-->
+<!--                                                        <mdb-badge primary="true" pill="true">2</mdb-badge>-->
+<!--                                                    </li>-->
+<!--                                                    <li class="list-group-item justify-content-between">-->
+<!--                                                        Morbi leo risus-->
+<!--                                                        <mdb-badge primary="true" pill="true">1</mdb-badge>-->
+<!--                                                    </li>-->
+<!--                                                    <li class="list-group-item justify-content-between">-->
+<!--                                                        Cras justo odio-->
+<!--                                                        <mdb-badge primary="true" pill="true">14</mdb-badge>-->
+<!--                                                    </li>-->
+<!--                                                    <li class="list-group-item justify-content-between">-->
+<!--                                                        Dapibus ac facilisis in-->
+<!--                                                        <mdb-badge primary="true" pill="true">2</mdb-badge>-->
+<!--                                                    </li>-->
+<!--                                                    <li class="list-group-item justify-content-between">-->
+<!--                                                        Morbi leo risus-->
+<!--                                                        <mdb-badge primary="true" pill="true">1</mdb-badge>-->
+<!--                                                    </li>-->
+<!--                                                </ul>-->
+<!--                                            </div>-->
+<!--                                            <div class="modal-footer justify-content-center">-->
+<!--                                                <button type="button" mdbBtn color="secondary" class="waves-light"-->
+<!--                                                        data-dismiss="modal" (click)="fluidLeft.hide()" mdbWavesEffect>-->
+<!--                                                    Close-->
+<!--                                                </button>-->
+<!--                                                <button type="button" mdbBtn color="primary" class="waves-light"-->
+<!--                                                        mdbWavesEffect>Save changes-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash;Fourth column&ndash;&gt;-->
+
+<!--                    </div>-->
+<!--                    &lt;!&ndash; /.First row&ndash;&gt;-->
+
+<!--                </section>-->
+<!--                &lt;!&ndash;/Section: Position & Sizes&ndash;&gt;-->
+
+<!--            </mdb-card-body>-->
+<!--            &lt;!&ndash;/Card content&ndash;&gt;-->
+<!--        </mdb-card>-->
+<!--        &lt;!&ndash;/.Card&ndash;&gt;-->
+
+
+<!--    </div>-->
+<!--    &lt;!&ndash;Grid column&ndash;&gt;-->
+
+
+<!--</div>-->
+<!--Grid row-->
+
+
+<!--<app-stats-card2></app-stats-card2>-->
